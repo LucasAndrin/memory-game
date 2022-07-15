@@ -1,4 +1,55 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+/**
+ * Fontawesome
+ */
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import {
+    faPlay,
+    faStop, 
+    faStar, 
+    faCircle,
+    faSquare,
+    faCamera,
+    faImage,
+    faEye, 
+    faGem,
+    faPen,
+    faCube,
+    faFish,
+    faAppleWhole,
+    faBook,
+    faBiohazard,
+    faDna,
+    faInfinity,
+    faShuttleSpace
+} from '@fortawesome/free-solid-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add({
+    faPlay,
+    faStop, 
+    faStar, 
+    faCircle,
+    faSquare,
+    faCamera,
+    faImage,
+    faEye, 
+    faGem,
+    faPen,
+    faCube,
+    faFish,
+    faAppleWhole,
+    faBook,
+    faBiohazard,
+    faDna,
+    faInfinity,
+    faShuttleSpace
+});
+
+createApp(App)
+    .component('font-awesome-icon', FontAwesomeIcon)
+    .mount('#app')

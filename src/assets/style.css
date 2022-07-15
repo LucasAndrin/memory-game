@@ -12,9 +12,13 @@
 }
 
 body {
-    background-color: black
+    background-color: #111
 }
 
 #app {
+    background-color: var(--black);
+}
+
+.bg-semi-black {
     background-color: var(--black);
 }
