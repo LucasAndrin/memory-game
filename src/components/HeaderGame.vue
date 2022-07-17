@@ -11,7 +11,7 @@ export default {
     data() {
         return {
             active: true,
-            quantidadeCards: 10,
+            quantidadeCards: 6,
             quantidadeCardsAtivos: null,
             validation: true,
             msg: ''
@@ -20,7 +20,6 @@ export default {
 
     methods: {
         playPause() {
-            console.log(this.validation, this.active)
             if (this.validation && this.active) {
 
                 this.active = !this.active
